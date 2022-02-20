@@ -1,0 +1,7 @@
+name: Test Action
+on: [push]
+jobs:
+  Test-Action-Github:
+    runs-on: ubuntu-latest
+    steps:
+      - run: git diff ${{ github.event.pull_request.base.sha }} test.xml
