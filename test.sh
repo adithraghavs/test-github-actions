@@ -1,1 +1,0 @@
-git show 6a7f48336da460a290ad6372d84ca895b5656148:./test.xml
