@@ -4,4 +4,4 @@ jobs:
   Test-Action-Github:
     runs-on: ubuntu-latest
     steps:
-      - run: sh test.sh
+      - run: ls
