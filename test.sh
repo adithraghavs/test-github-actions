@@ -1,1 +1,1 @@
-git show HEAD~30:test.xml
+git show fatal: 637090799be7e1a214b37ea4fbebb76f88df1d8b:./test.xml
