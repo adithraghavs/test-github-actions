@@ -1,7 +1,11 @@
-name: Test Action
+name: GitHub Actions Test
 on: [push]
 jobs:
-  Test-Action-Github:
+  Test-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: git diff b68ff4be44fd493a3274c38f727f7404fde85c65 637090799be7e1a214b37ea4fbebb76f88df1d8b test.xml
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: List files in the repository
+        run: |
+          sh ${{ github.workspace }}/test.sh
