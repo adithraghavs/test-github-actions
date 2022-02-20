@@ -4,4 +4,4 @@ jobs:
   Test-Action-Github:
     runs-on: ubuntu-latest
     steps:
-      - run: git diff ${{ github.event.pull_request.base.sha }} test.xml
+      - run: git diff b68ff4be44fd493a3274c38f727f7404fde85c65 test.xml
