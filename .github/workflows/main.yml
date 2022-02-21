@@ -8,4 +8,4 @@ jobs:
         uses: actions/checkout@v2
       - name: List files in the repository
         run: |
-          git diff 64252781112f8d3c890d930c2c074fbc6509da96 7af6de4385dde31c157ad3f8d417d4ac12ed531c test.txt
+          python3 ${{ github.workspace }}/test.py
